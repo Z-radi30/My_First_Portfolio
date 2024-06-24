@@ -1,0 +1,25 @@
+/* Apply display: flex to both body and main */
+body {
+    display: flex;
+    flex-direction: column; /* Body contains a column of three boxes */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row; /* Main contains a row of two boxes */
+    flex: auto; /* Ensure main tag keeps automatic height and width */
+}
+
+/* Set flex properties for article and aside */
+article {
+    flex: 2; /* Article takes 2/3 of the width */
+    overflow-y: auto; /* Enable scrolling within article */
+}
+
+aside {
+    flex: 1; /* Aside takes 1/3 of the width */
+    overflow-y: auto; /* Enable scrolling within aside */
+}
